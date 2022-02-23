@@ -3,7 +3,6 @@ from rest_framework.response import Response
 from app.serializers import crudAppSerializer
 from app.models import crudApp
 
-
 @api_view(['GET', 'POST'])
 def crud_get_post(request):
 

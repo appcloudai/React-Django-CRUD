@@ -27,11 +27,7 @@ function CRUD(){
   const handlechange=(event) => {
     setItem({...item, title:event.target.value, })
     }
-
-   const handleAlert=() => {
-        alert("Hey👋 \n\n Publishing is disabled on this server! \n ... to test this feature please download the source code and test it on a local machine. \n\n SourceCode:\n www.github.com/appcloudai \n\n 😃 If you like it please consider giving us a star on github 😃 \n Thanks")
-      }
-
+    
    const handleSubmit = async () => {
         try {
             const resp = await axios.post('http://127.0.0.1:8000/app/crud_get_post/',item)
